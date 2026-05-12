@@ -60,4 +60,4 @@ Landing page funcional y lista para presentación académica.
 
 ## Licencia
 
-Proyecto de uso académico y demostrativo.
+Proyecto de uso académico y demostrativo. 
