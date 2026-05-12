@@ -1,4 +1,4 @@
-# MediTrack Sensor Landing Page
+# MediTrack Sensor Landing Page 
 
 Landing page institucional para **MediTrack Sensor**, una solución de monitoreo IoT orientada a la logística farmacéutica y al control de condiciones críticas en tiempo real.
 
