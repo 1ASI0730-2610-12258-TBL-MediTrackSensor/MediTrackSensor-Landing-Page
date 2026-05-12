@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typeWriter = (selector, text, i, fnCallback) => {
         const el = document.querySelector(selector);
         if (!el) return;
-        
+
         if (i < text.length) {
             el.innerHTML = text.substring(0, i + 1);
             setTimeout(() => typeWriter(selector, text, i + 1, fnCallback), 25);

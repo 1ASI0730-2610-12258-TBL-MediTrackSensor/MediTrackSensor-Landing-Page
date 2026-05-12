@@ -281,7 +281,7 @@ h1, h2, h3, h4, .navbar-brand {
 
 /* --- FLOATING FEATURE CARDS --- */
 .floating-cards-wrapper {
-    margin-top: -165px; 
+    margin-top: -165px;
     position: relative;
     z-index: 50;
     padding-bottom: 30px;
@@ -2019,9 +2019,9 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        linear-gradient(rgba(10, 17, 24, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(10, 17, 24, 0.04) 1px, transparent 1px);
+    background-image:
+            linear-gradient(rgba(10, 17, 24, 0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(10, 17, 24, 0.04) 1px, transparent 1px);
     background-size: 50px 50px;
     pointer-events: none;
     z-index: 0;
@@ -2268,7 +2268,7 @@ footer {
         font-size: 0.62rem;
         letter-spacing: 1.4px;
     }
-    
+
     /* About Us Mobile Optimization */
     #nosotros {
         padding: 50px 0 !important;
