@@ -2,8 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Smooth Scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (!href || href === '#' || this.hasAttribute('data-bs-toggle')) {
+                return;
+            }
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 window.scrollTo({
                     top: target.offsetTop - 80, // Adjust for sticky navbar
@@ -100,34 +104,63 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { threshold: 0.3 });
         statsObserver.observe(statsSection);
     }
-    // Typing Animation Logic
-    const typeWriter = (selector, text, i, fnCallback) => {
+    // Typing Animation Logic (strings from i18n)
+    let heroAnimToken = 0;
+
+    const typeWriter = (selector, text, i, fnCallback, token) => {
         const el = document.querySelector(selector);
-        if (!el) return;
+        if (!el || token !== heroAnimToken) return;
 
         if (i < text.length) {
             el.innerHTML = text.substring(0, i + 1);
-            setTimeout(() => typeWriter(selector, text, i + 1, fnCallback), 25);
+            setTimeout(() => typeWriter(selector, text, i + 1, fnCallback, token), 25);
         } else if (typeof fnCallback == 'function') {
             setTimeout(fnCallback, 400);
         }
     };
 
     const startHeroAnimation = () => {
-        typeWriter("#typing-tagline", "Monitoreo IoT para Medicamentos", 0, () => {
-            typeWriter("#typing-title", "Control en tiempo real de temperatura, humedad y luz", 0, () => {
-                typeWriter("#typing-desc", "Plataforma web para clínicas, farmacias y hospitales. Alertas automáticas y trazabilidad total.", 0, () => {
-                    const btn = document.getElementById('hero-cta');
-                    if (btn) {
-                        btn.style.opacity = '1';
-                        btn.style.transform = 'translateY(0)';
+        heroAnimToken += 1;
+        const token = heroAnimToken;
+        const H = window.MEDITRACK_I18N && window.MEDITRACK_I18N.getHero
+            ? window.MEDITRACK_I18N.getHero()
+            : {
+                tagline: 'IoT monitoring for medicines',
+                title: 'Real-time control of temperature, humidity, and light',
+                desc: 'Web platform for clinics, pharmacies, and hospitals. Automated alerts and full traceability.'
+            };
+
+        const tag = document.querySelector('#typing-tagline');
+        const tit = document.querySelector('#typing-title');
+        const dsc = document.querySelector('#typing-desc');
+        if (tag) tag.innerHTML = '';
+        if (tit) tit.innerHTML = '';
+        if (dsc) dsc.innerHTML = '';
+
+        const btnLogin = document.getElementById('hero-login');
+        if (btnLogin) {
+            btnLogin.style.opacity = '0';
+            btnLogin.style.transform = 'translateY(20px)';
+        }
+
+        typeWriter('#typing-tagline', H.tagline, 0, () => {
+            typeWriter('#typing-title', H.title, 0, () => {
+                typeWriter('#typing-desc', H.desc, 0, () => {
+                    if (token !== heroAnimToken) return;
+                    if (btnLogin) {
+                        btnLogin.style.opacity = '1';
+                        btnLogin.style.transform = 'translateY(0)';
                     }
-                });
-            });
-        });
+                }, token);
+            }, token);
+        }, token);
     };
 
     setTimeout(startHeroAnimation, 500);
+
+    window.addEventListener('meditrack:i18n', () => {
+        startHeroAnimation();
+    });
 
     // Global Reveal Animation Observer
     const genericObserver = new IntersectionObserver((entries) => {

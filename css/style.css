@@ -2476,3 +2476,213 @@ footer {
     color: var(--primary-orange);
     line-height: 1.35;
 }
+
+/* Language switch EN | ES */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    padding: 3px 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.top-header-new .lang-switch {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.lang-switch--nav {
+    background: rgba(10, 17, 24, 0.06);
+    border: 1px solid rgba(10, 17, 24, 0.1);
+}
+
+.navbar-new.scrolled .lang-switch--nav {
+    background: rgba(10, 17, 24, 0.05);
+}
+
+.lang-btn {
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    line-height: 1;
+    transition: color 0.2s, background 0.2s;
+}
+
+.lang-switch--nav .lang-btn {
+    color: var(--text-muted);
+}
+
+.lang-btn:hover {
+    color: #fff;
+}
+
+.lang-switch--nav .lang-btn:hover {
+    color: var(--primary-orange);
+}
+
+.lang-btn.active {
+    background: var(--primary-orange);
+    color: #fff !important;
+    box-shadow: 0 2px 8px rgba(243, 112, 33, 0.35);
+}
+
+.lang-divider {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.65rem;
+    user-select: none;
+    padding: 0 1px;
+}
+
+.lang-switch--nav .lang-divider {
+    color: rgba(10, 17, 24, 0.25);
+}
+
+.btn-hero-outline {
+    background: transparent;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-hero-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.footer-terms-link {
+    font-weight: 600;
+    opacity: 0.95;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-terms-link:hover {
+    color: var(--primary-orange) !important;
+}
+
+.footer-dark-new .footer-terms-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Página términos — estilo sobrio (referencia académica) */
+.page-terms {
+    font-family: 'Outfit', sans-serif;
+    background: #eef1f4;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+.terms-page-top {
+    background: #fff;
+    border-bottom: 1px solid rgba(30, 41, 59, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.terms-page-top-inner {
+    max-width: 800px;
+}
+
+.terms-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.terms-back-link:hover {
+    color: var(--primary-orange);
+}
+
+.terms-page-wrap {
+    flex: 1;
+}
+
+.terms-page-card {
+    max-width: 720px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem 1.75rem;
+    box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+    border: 1px solid rgba(30, 41, 59, 0.06);
+}
+
+@media (min-width: 768px) {
+    .terms-page-card {
+        padding: 2.5rem 3rem;
+    }
+}
+
+.terms-page-title {
+    font-size: clamp(1.5rem, 3vw, 1.85rem);
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+}
+
+.terms-page-content {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #334155;
+}
+
+.terms-page-content .terms-lead {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.terms-page-content .terms-section-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #0f172a;
+    margin-top: 1.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.terms-page-content .terms-section-title:first-of-type {
+    margin-top: 0.25rem;
+}
+
+.terms-page-content p {
+    margin-bottom: 0.85rem;
+}
+
+.terms-page-content ul.terms-list {
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.terms-page-content ul.terms-list li {
+    margin-bottom: 0.35rem;
+}
+
+.terms-page-content a {
+    color: #0f172a;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.terms-page-content a:hover {
+    color: var(--primary-orange);
+}
