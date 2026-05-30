@@ -185,4 +185,25 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal-card, .reveal-left, .reveal-right, .reveal-item, .reveal-zoom, .reveal-watermark').forEach(el => {
         genericObserver.observe(el);
     });
+
+    // Video Poster logic: Click to play
+    document.querySelectorAll('.video-poster').forEach(poster => {
+        poster.addEventListener('click', function() {
+            const videoId = this.getAttribute('data-youtube');
+            if (!videoId) return;
+            
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('width', '100%');
+            iframe.setAttribute('height', '100%');
+            iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+            iframe.setAttribute('title', 'YouTube video player');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.style.borderRadius = '14px';
+
+            this.innerHTML = '';
+            this.appendChild(iframe);
+        });
+    });
 });

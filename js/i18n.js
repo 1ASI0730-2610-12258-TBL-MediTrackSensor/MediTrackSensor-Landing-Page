@@ -163,35 +163,26 @@
             contact_hours: 'Horario',
             contact_hours_p: 'Lun - Vie: 09:00 - 18:00',
             contact_social: 'Sigue nuestras redes sociales',
-            form_h3: 'Envíanos un mensaje',
-            form_intro:
-                'Completa el formulario y un asesor técnico se pondrá en contacto contigo en menos de 24 horas.',
-            form_name: 'Nombre',
-            form_company: 'Empresa',
-            form_phone: 'Teléfono',
-            form_email: 'Email',
-            form_subject: 'Asunto',
-            form_message: 'Mensaje',
-            ph_name: 'Tu nombre',
-            ph_company: 'Nombre empresa',
-            ph_phone: '+51 ...',
-            ph_email: 'correo@ejemplo.com',
-            ph_subject: '¿En qué podemos ayudarte?',
-            ph_message: 'Escribe tu mensaje aquí...',
-            form_send: 'ENVIAR MENSAJE',
+            contact_card_h3: '¿Listo para reducir pérdidas y mejorar la conservación?',
+            contact_card_p: 'MediTrack Sensor entrega telemetría confiable para optimizar el almacenamiento, humedad y luz. Comienza con un piloto rápido y comprueba el impacto en tu operación.',
+            contact_btn_start: 'Empezar ahora',
+            contact_btn_demo: 'Agendar demo comercial',
+            contact_li1: 'Instalación y prueba en sede en 2 semanas',
+            contact_li2: 'Onboarding y soporte incluidos',
+            contact_li3: 'Resultados medibles en 30 días',
             footer_tagline: 'Monitoreo inteligente para medicamentos.',
             footer_subscribe: 'Suscríbete al boletín',
             ph_subscribe: 'Tu correo electrónico',
             footer_copy: '© 2024 TechnoByteLambders (UPC). Todos los derechos reservados.',
             footer_terms: 'Términos y Condiciones',
-            footer_legal_copy: '© 2026 InfraTrack (UPC). Todos los derechos reservados.',
+            footer_legal_copy: '© 2026 MediTrack Sensor (UPC). Todos los derechos reservados.',
             terms_back: 'Volver al sitio',
-            terms_doc_title: 'Términos y Condiciones | InfraTrack (UPC)',
+            terms_doc_title: 'Términos y Condiciones | MediTrack Sensor (UPC)',
             terms_modal_title: 'Términos y Condiciones',
             modal_ok: 'Entendido',
             terms_body_html: `<p class="terms-lead text-secondary mb-4">Última actualización: mayo de 2026 · Proyecto académico — Universidad Peruana de Ciencias Aplicadas (UPC)</p>
 <p class="terms-section-title">1. Identificación</p>
-<p>El presente sitio web divulga el proyecto InfraTrack, desarrollado por el equipo TechTitans como parte de su formación en Ingeniería de Software en la UPC. Los datos de contacto publicados en la landing son referenciales para fines educativos y de demostración.</p>
+<p>El presente sitio web divulga el proyecto MediTrack Sensor, desarrollado por el equipo TechnoByteLambders como parte de su formación en Ingeniería de Software en la UPC. Los datos de contacto publicados en la landing son referenciales para fines educativos y de demostración.</p>
 <p class="terms-section-title">2. Objeto</p>
 <p>Estas condiciones regulan el acceso y uso del sitio informativo. El contenido tiene carácter descriptivo sobre una solución IoT de monitoreo; no constituye por sí mismo una oferta comercial vinculante salvo que se formalice por otros medios acordados con los titulares del proyecto.</p>
 <p class="terms-section-title">3. Uso permitido</p>
@@ -204,17 +195,17 @@
 <p class="terms-section-title">4. Propiedad intelectual</p>
 <p>Marca, logotipos, textos, imágenes y diseño de la landing son obra del equipo o materiales utilizados con fines académicos. Queda prohibido el uso comercial no autorizado que implique confusión sobre el origen del proyecto.</p>
 <p class="terms-section-title">5. Limitación de responsabilidad</p>
-<p>La información se ofrece «tal cual», sin garantía de exhaustividad. InfraTrack no se responsabiliza por decisiones empresariales tomadas únicamente con base en el material de este sitio, ni por interrupciones temporales del servicio de alojamiento.</p>
+<p>La información se ofrece «tal cual», sin garantía de exhaustividad. MediTrack Sensor no se responsabiliza por decisiones empresariales tomadas únicamente con base en el material de este sitio, ni por interrupciones temporales del servicio de alojamiento.</p>
 <p class="terms-section-title">6. Enlaces externos</p>
 <p>Los enlaces a aplicaciones o demos de terceros (por ejemplo, entornos de prueba en la nube) se ofrecen para conveniencia del visitante. No controlamos esos destinos; su uso queda sujeto a las políticas de cada plataforma.</p>
 <p class="terms-section-title">7. Datos personales y formularios</p>
-<p>Los formularios de la landing pueden ser demostrativos. Cualquier tratamiento real de datos personales deberá contar con bases legales y medidas técnicas adecuadas conforme a la normativa peruana de protección de datos aplicable en el momento del tratamiento.</p>
+<p>Cualquier tratamiento real de datos personales deberá contar con bases legales y medidas técnicas adecuadas conforme a la normativa peruana de protección de datos aplicable en el momento del tratamiento.</p>
 <p class="terms-section-title">8. Modificaciones</p>
 <p>El equipo puede actualizar estos términos para reflejar cambios en el proyecto o requisitos académicos. La fecha de «última actualización» indicará la versión vigente.</p>
 <p class="terms-section-title">9. Legislación aplicable</p>
 <p>Para cualquier controversia relacionada con el uso de este sitio informativo, resultarán aplicables las leyes de la República del Perú, sometiéndose las partes a los tribunales competentes de Lima, salvo norma imperativa en contrario.</p>
 <p class="terms-section-title">10. Contacto</p>
-<p>Para consultas sobre estos términos o el proyecto, puede utilizarse el correo indicado en la sección de contacto de la página principal: <a href="mailto:contacto@infratrack.pe">contacto@infratrack.pe</a>.</p>`
+<p>Para consultas sobre estos términos o el proyecto, puede utilizarse el correo indicado en la sección de contacto de la página principal: <a href="mailto:contacto@technobytelambders.pe">contacto@technobytelambders.pe</a>.</p>`
         },
         en: {
             lang_group_aria: 'Choose language',
@@ -374,35 +365,26 @@
             contact_hours: 'Hours',
             contact_hours_p: 'Mon – Fri: 09:00 – 18:00',
             contact_social: 'Follow us on social media',
-            form_h3: 'Send us a message',
-            form_intro:
-                'Complete the form and a technical advisor will contact you within 24 hours.',
-            form_name: 'Name',
-            form_company: 'Company',
-            form_phone: 'Phone',
-            form_email: 'Email',
-            form_subject: 'Subject',
-            form_message: 'Message',
-            ph_name: 'Your name',
-            ph_company: 'Company name',
-            ph_phone: '+51 ...',
-            ph_email: 'you@example.com',
-            ph_subject: 'How can we help?',
-            ph_message: 'Write your message here...',
-            form_send: 'SEND MESSAGE',
+            contact_card_h3: 'Ready to reduce losses and improve preservation?',
+            contact_card_p: 'MediTrack Sensor delivers reliable telemetry to optimize storage, humidity, and light. Start with a quick pilot and see the impact on your operation.',
+            contact_btn_start: 'Get started now',
+            contact_btn_demo: 'Schedule commercial demo',
+            contact_li1: 'On-site installation and testing in 2 weeks',
+            contact_li2: 'Onboarding and support included',
+            contact_li3: 'Measurable results in 30 days',
             footer_tagline: 'Smart monitoring for medicines.',
             footer_subscribe: 'Subscribe to the newsletter',
             ph_subscribe: 'Your email address',
             footer_copy: '© 2024 TechnoByteLambders (UPC). All rights reserved.',
             footer_terms: 'Terms and Conditions',
-            footer_legal_copy: '© 2026 InfraTrack (UPC). All rights reserved.',
+            footer_legal_copy: '© 2026 MediTrack Sensor (UPC). All rights reserved.',
             terms_back: 'Return to site',
-            terms_doc_title: 'Terms and Conditions | InfraTrack (UPC)',
+            terms_doc_title: 'Terms and Conditions | MediTrack Sensor (UPC)',
             terms_modal_title: 'Terms and Conditions',
             modal_ok: 'Got it',
             terms_body_html: `<p class="terms-lead text-secondary mb-4">Last updated: May 2026 · Academic project — Universidad Peruana de Ciencias Aplicadas (UPC)</p>
 <p class="terms-section-title">1. Identification</p>
-<p>This website presents the InfraTrack project, developed by the TechTitans team as part of their Software Engineering studies at UPC. Contact details on the landing page are indicative for educational and demonstration purposes.</p>
+<p>This website presents the MediTrack Sensor project, developed by the TechnoByteLambders team as part of their Software Engineering studies at UPC. Contact details on the landing page are indicative for educational and demonstration purposes.</p>
 <p class="terms-section-title">2. Purpose</p>
 <p>These terms govern access to and use of this informational site. The content describes an IoT monitoring solution in general terms; it does not constitute a binding commercial offer unless agreed separately with the project owners.</p>
 <p class="terms-section-title">3. Permitted use</p>
@@ -415,17 +397,17 @@
 <p class="terms-section-title">4. Intellectual property</p>
 <p>Branding, logos, text, images, and landing design are the team’s work or materials used for academic purposes. Unauthorized commercial use that creates confusion about the project’s origin is prohibited.</p>
 <p class="terms-section-title">5. Limitation of liability</p>
-<p>Information is provided “as is” without a guarantee of completeness. InfraTrack is not liable for business decisions based solely on this site’s materials, nor for temporary interruptions of hosting services.</p>
+<p>Information is provided “as is” without a guarantee of completeness. MediTrack Sensor is not liable for business decisions based solely on this site’s materials, nor for temporary interruptions of hosting services.</p>
 <p class="terms-section-title">6. External links</p>
 <p>Links to third-party applications or demos (e.g. cloud test environments) are provided for convenience. We do not control those destinations; use is subject to each platform’s policies.</p>
 <p class="terms-section-title">7. Personal data and forms</p>
-<p>Landing forms may be demonstrative only. Any real processing of personal data must have a lawful basis and appropriate technical measures under applicable Peruvian data-protection law at the time of processing.</p>
+<p>Any real processing of personal data must have a lawful basis and appropriate technical measures under applicable Peruvian data-protection law at the time of processing.</p>
 <p class="terms-section-title">8. Changes</p>
 <p>The team may update these terms to reflect project or academic requirement changes. The “last updated” date will indicate the current version.</p>
 <p class="terms-section-title">9. Applicable law</p>
 <p>For disputes related to use of this informational site, the laws of the Republic of Peru apply, and the parties submit to the competent courts of Lima, unless mandatory law provides otherwise.</p>
 <p class="terms-section-title">10. Contact</p>
-<p>For questions about these terms or the project, use the email shown in the main page contact section: <a href="mailto:contacto@infratrack.pe">contacto@infratrack.pe</a>.</p>`
+<p>For questions about these terms or the project, use the email shown in the main page contact section: <a href="mailto:contacto@technobytelambders.pe">contacto@technobytelambders.pe</a>.</p>`
         }
     };
 
